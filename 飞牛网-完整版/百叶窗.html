@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>百叶窗</title>
+		<script src="js/jquery.js"></script>
+		<style>
+			*{margin: 0;padding: 0;box-sizing: border-box;}
+			#baiye{width: 200px;height: 440px;padding: 0 10px;}
+			#baiye ul{border-bottom: 1px dotted rgba(0,0,0,0.1);}
+			#baiye ul li{list-style: none;position: relative;width: 180px;cursor: pointer;}
+			#baiye ul li:nth-of-type(1){height: 40px;font-size: 12px;line-height: 40px;padding-left: 25px;}
+			#baiye ul li:nth-of-type(2){height: 70px;padding-left: 5px;padding-top: 12px;display: none;}
+			#baiye ul li b{position: absolute;display: block;background: #CCC;width: 15px;height: 15px;text-align: center;line-height: 15px;top: 12px;left: 5px;color: #fff;}
+			#baiye img{width: 50px;height: 50px;}
+			#baiye ul li:nth-of-type(2) img{display: block;float: left;}
+			#baiye ul li:nth-of-type(2) div{float: right;width: 110px;}
+			#baiye ul li:nth-of-type(2) div span{font-size: 12px;color: #4d4d4d;display: block;height: 14px;width: 110px;overflow: hidden;}
+			#baiye ul li:nth-of-type(2) div p{color: #C20053;font-size: 16px;margin-top: 5px;}
+			#baiye ul li:nth-of-type(2) div c{font-size: 10px;}
+		</style>
+	</head>
+	<body>
+		<div id="baiye">
+			<ul>
+				<li style="display: none;">
+					<b>1</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li style="display: block;">
+					<b>1</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>2</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>2</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>3</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>3</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>4</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>4</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>5</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>5</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>6</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>6</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>7</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>7</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>8</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>8</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>9</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>9</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<b>10</b>
+					<span>我我我我玩玩我我</span>
+				</li>
+				<li>
+					<b>10s</b>
+					<img src="img/banner_car1.jpg" alt="" />
+					<div>
+						<span>真彩(TRUECOLOR)</span>
+						<p><c>￥</c>8.5</p>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		$(document).ready(function(){
+			$('#baiye ul').mouseenter(function(){
+				$(this).find('li').first().css({display:'none'})
+				$(this).find('li').last().css({display:'block'})
+				$(this).siblings().find('li:odd').css({display:'none'})
+				$(this).siblings().find('li:even').css({display:'block'})
+			})
+		})
+	</script>
+</html>

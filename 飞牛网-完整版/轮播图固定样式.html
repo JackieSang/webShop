@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>自己封装后的轮播图</title>
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.css">
+	</head>
+	<body>
+		<div class="container className">
+				<ul class="carousel">
+					<li><a href=""><img src="img/banner_car1.jpg" alt="" /></a></li>
+					<li><a href=""><img src="img/banner_car2.jpg" alt="" /></a></li>
+					<li><a href=""><img src="img/banner_car3.jpg" alt="" /></a></li>
+					<li><a href=""><img src="img/banner_car4.jpg" alt="" /></a></li>
+				</ul>
+				<div class="left"><i class="fa fa-angle-left fa-2x"></i></div>
+				<div class="right"><i class="fa fa-angle-right fa-2x"></i></div>
+				<ul class="circle">
+		            
+				</ul>
+		</div>
+		<div class="className1">
+				<ul class="carousel">
+					<li><a href=""><img src="img/banner_car1.jpg" alt="" /></a></li>
+					<li><a href=""><img src="img/banner_car2.jpg" alt="" /></a></li>
+				</ul>
+				<div class="left"><i class="fa fa-angle-left fa-2x"></i></div>
+				<div class="right"><i class="fa fa-angle-right fa-2x"></i></div>
+				<ul class="circle">
+		            
+				</ul>
+		</div>
+	</body>
+	<script src="js/jquery.js"></script>
+	<script src="js/gongyong.js"></script>
+	
+	<script type="text/javascript">
+//		使用实例     
+		//  注：  封装函数需要加载font-awesome文件  如html顶部加载内容   
+		//     且封装函数是在jquery基础上封装的，需要加载jquery，
+		//     且样式需要略微重置 需要改变浏览器本身margin和padding，盒子模式为border-box
+		//     注意不要将轮播盒子类名相同  否则会同时控制   
+		carousel($('.container'))
+		carousel($('.className1'))
+	</script>
+</html>
