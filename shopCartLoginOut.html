@@ -12,6 +12,7 @@
 			*{
 				margin: 0;
 				padding: 0;
+				box-sizing: border-box;
 			}
 			/*未登录购物车最上面top*/
 			.topBox{
@@ -172,7 +173,7 @@
 			/*空购物车*/
 			.body .nothing{
 				width: 405px;
-				height: 150px;
+				height: 250px;
 				margin: 0 auto;
 				padding-top: 100px;
 			}
@@ -213,6 +214,7 @@
 				font-size: 20px;
 				padding-left: 10px;
 				padding-top: 10px;
+				color: #C20053;
 			}
 			.store h2:after{
 				position: absolute;
@@ -268,7 +270,49 @@
 				background: #c20053;
 				border: 1px solid #C20053;
 			}
+			/*footer   */
 			
+			footer ul{list-style: none;}
+			.footTop , .footMd{width: 100%;min-width: 1190px;}
+			.foot1,.foot2,.foot3{width: 1190px;margin: 0 auto;}
+			/*foot第一部分*/
+			.footTop{border-top: 1px solid #ccc;border-bottom: 1px solid #ccc;;}
+			.foot1{padding: 30px 0;}
+			.foot1 ul{height: 60px;}
+			.foot1 ul li{float: left;height: 60px;width: 296px;padding: 2px 30px;border-right: 1px dotted #ccc;}
+			.foot1 ul li:nth-child(4){border: 0;}
+			.foot1 ul li img{display: block;float: left;}
+			.foot1 ul li bold{display: block;float: right;width: 170px;height: 26px;line-height: 26px;font-weight: 800;}
+			.foot1 ul li span{display: block;float: right;width: 170px;height: 26px;line-height: 26px;color: #4d4d4d;}
+			/*foot第二部分*/
+			.footMd{border-bottom: 1px solid #ccc;}
+			.foot2{height: 200px;padding: 30px 0;}
+			.foot2 ul:nth-child(1){width: 800px;float: left;}
+			.foot2 ul:nth-child(1) li{margin-right: 60px;float: left;padding-left: 30px;position: relative;width: 100px;}
+			.foot2 ul:nth-child(1) li h4{color: #666;font-size: 17px;line-height: 20px;height: 20px;margin-bottom: 10px;}
+			.foot2 ul:nth-child(1) li b{position: absolute;left: 8px;top: 1px;background: url(img/logo.png);width: 20px;height: 20px;}
+			.foot2 ul:nth-child(1) li a{display: block;height: 20px;line-height: 20px;color: #4d4d4d;font-size: 12px;text-decoration: none;margin-top: 3px;}
+			.foot2 ul:nth-child(1) li a:hover{text-decoration: underline;}
+			.foot2 ul:nth-child(2){width: 390px;float: right;}
+			.foot2 ul:nth-child(2) h4{color: #666;font-size: 17px;line-height: 20px;height: 20px;margin-bottom: 10px;}
+			.foot2 ul:nth-child(2) li{float: left;margin-left: 70px;text-align: center;}
+			
+			
+			.footBtm{width: 1190px;margin: 0 auto;padding-top: 30px;}
+			.foot3 ul li{float: left;}
+			.foot3 ul:nth-child(1){margin-bottom: 15px;}
+			.foot3 ul:nth-child(1) li{font-size: 12px;color: #4d4d4d;padding: 0 10px;}
+			.foot3 ul:nth-child(1) li a{display: block;;color: #4d4d4d;text-decoration: none;font-size: 12px;}
+			.foot3 ul:nth-child(1) li a:hover{text-decoration: underline;}
+			.foot3 ul:nth-child(1){height: 40px;line-height: 40px;padding: 0 90px;}
+			
+			.foot3 p{color: #4d4d4d;font-size: 12px;text-align: center;margin-top: 8px;}
+			.foot3 p{color: #4d4d4d;font-size: 12px;}
+			.foot3 p a{color: #4d4d4d;font-size: 12px;text-decoration: none;}
+			.foot3 p span{display: inline-block;padding: 0 10px;}
+			
+			.foot3 ul:nth-of-type(2){padding: 0 120px;height: 50px;margin-top: 20px;margin-bottom: 40px;}
+			.foot3 ul:nth-of-type(2) li{padding: 0 5px;width: 130px;}
 			
 			
 			
@@ -355,6 +399,139 @@
 				</div>
 			</div>
 		</div>
+		<footer>
+			<div class="footTop">
+				<div class="foot1">
+					<ul>
+						<li>
+							<img src="img/footTop1.png" alt="" />
+							<bold>正品低价</bold>
+							<span>正品行货，品质保障</span>
+						</li>
+						<li>
+							<img src="img/footTop2.png" alt="" />
+							<bold>品类齐全</bold>
+							<span>品类齐全，选择丰富</span>
+						</li>
+						<li>
+							<img src="img/footTop3.png" alt="" />
+							<bold>快速配送</bold>
+							<span>多仓直发，极速配送</span>
+						</li>
+						<li>
+							<img src="img/footTop4.png" alt="" />
+							<bold>售后无忧</bold>
+							<span>7天无理由退货</span>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footMd">
+				<div class="foot2">
+					<ul>
+						<li>
+							<h4>购物指南</h4>
+							<a href="#">新用户注册</a>
+							<a href="#">购物流程</a>
+							<b style="background-position: -23px -52px;"></b>
+						</li>
+						<li>
+							<h4>支付方式</h4>
+							<a href="#">货到付款</a>
+							<a href="#">银联卡支付</a>
+							<a href="#">支付宝</a>
+							<a href="#">财付通</a>
+							<a href="#">优惠卡券</a>
+							<b style="background-position: -96px -44px;"></b>
+						</li>
+						<li>
+							<h4>配送服务</h4>
+							<a href="#">配送方式</a>
+							<a href="#">配送查询</a>
+							<a href="#">便利店自提</a>
+							<b style="background-position: -118px -22px;"></b>
+						</li>
+						<li>
+							<h4>售后服务</h4>
+							<a href="#">退货说明</a>
+							<a href="#">退款说明</a>
+							<b style="background-position: -96px -22px;"></b>
+						</li>
+						<li>
+							<h4>常见问题</h4>
+							<a href="#">账户问题</a>
+							<a href="#">发票问题</a>
+							<a href="#">订单问题</a>
+							<a href="#">在线客服</a>
+							<b style="background: #fff;"></b>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<h4>飞牛网微信</h4>
+							<img src="img/mainMd1.jpg" alt="" />
+						</li>
+						<li>
+							<h4>飞牛网客户端</h4>
+							<img src="img/mainMd2.png" alt="" />
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footBtm">
+				<div class="foot3">
+					<ul>
+						<li><a href="#">公司介绍</a></li>
+						<li><a href="#">联系我们</a></li>
+						<li><a href="#">飞牛招聘</a></li>
+						<li><a href="#">媒体频道</a></li>
+						<li><a href="#">搜索热词</a></li>
+						<li><a href="#">评价中心</a></li>
+						<li><a href="#">友情链接</a></li>
+						<li><a href="#">商家入驻</a></li>
+						<li><a href="#">招商标准</a></li>
+						<li><a href="#">开放平台</a></li>
+						<li><a href="#">企业团购 021-36695538</a></li>
+						<li><a href="#">客服热线 400-920-6565</a></li>
+					</ul>
+					<p>
+						<span><a href="#">沪公网安备 31010802001821号</a></span>
+						|<span>沪ICP备14034590号</span>
+						|<span>食品经营许可证 JY13101060025900</span>
+						|<span>酒类商品零售许可证 沪静酒专字 第0818030108000002号 </span>
+					</p>
+					<p>
+						<span>出版物经营许可证编号新出发（沪）零字第Z6216号　|　快递业务经营许可证编号：沪邮20131324B　|　营业执照 </span>
+					</p>
+					<p>
+						Copyright © 2013-2016 飞牛网, All Rights Reserved.
+					</p>
+					<ul>
+						<li>
+							<a href="#"><img src="img/footBtm1.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/footBtm2.jpg" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/footBtm3.jpg" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/footBtm4.jpg" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/footBtm5.jpg" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/footBtm6.png" alt="" /></a>
+						</li>
+						<li>
+							<a href="#"><img src="img/footBtm7.jpg" alt="" /></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
 	</body>
 	<script>
 		$(function(){
